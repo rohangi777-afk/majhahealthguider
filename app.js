@@ -1,4 +1,4 @@
-// ===== APP.JS - Core functionality =====
+// ===== app.js - Core functionality =====
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNav();
