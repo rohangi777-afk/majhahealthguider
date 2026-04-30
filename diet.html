@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जेवण-खाणं | माझा हेल्थ गायडर</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">🌿 माझा हेल्थ गायडर</a>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 मुख्यपृष्ठ</a></li>
+      <li><a href="diet.html" class="active">🥗 जेवण-खाणं</a></li>
+      <li><a href="mental.html">🧠 मानसिक आरोग्य</a></li>
+      <li><a href="bmi.html">⚖️ BMI</a></li>
+      <li><a href="diet-planner.html">📋 डाएट प्लॅन</a></li>
+      <li><a href="yoga.html">🧘 योगा</a></li>
+      <li><a href="workout.html">💪 व्यायाम</a></li>
+    </ul>
+    <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()">🌙</button><button class="hamburger">☰</button></div>
+  </nav>
+
+  <section class="section" style="padding-top:5rem;">
+    <h1 class="section-title animate-in">🥗 जेवण-खाणं (आहार व पोषण)</h1>
+    <p class="section-subtitle animate-in">संतुलित आहाराने निरोगी जीवन जगा</p>
+
+    <!-- Balanced Diet Info -->
+    <div class="card animate-in" style="margin-bottom:2rem;padding:2rem;">
+      <h3 style="color:var(--primary);margin-bottom:1rem;">⚖️ संतुलित आहार म्हणजे काय?</h3>
+      <p>संतुलित आहार म्हणजे शरीराला आवश्यक असलेले सर्व पोषक घटक योग्य प्रमाणात मिळवणे. यामध्ये प्रथिने (Protein), कर्बोदके (Carbs), चरबी (Fats), जीवनसत्त्वे (Vitamins), खनिजे (Minerals) आणि पाणी यांचा समावेश होतो.</p>
+      <p style="margin-top:0.8rem;">दररोज विविध रंगांच्या भाज्या, फळे, धान्ये, डाळी आणि दुग्धजन्य पदार्थ खा. 🌈</p>
+    </div>
+
+    <!-- Macronutrients -->
+    <h2 class="section-title animate-in" style="font-size:1.5rem;margin-top:2rem;">🔬 मॅक्रोन्यूट्रिएंट्स</h2>
+    <div class="quick-access" style="padding:1.5rem 0;">
+      <div class="card animate-in" style="border-left:4px solid #e17055;">
+        <h3>🥩 प्रथिने (Protein)</h3>
+        <p style="margin:0.8rem 0;color:var(--text-muted);">स्नायू बनवणे, दुरुस्त करणे</p>
+        <p><strong>स्रोत:</strong> अंडी, चिकन, पनीर, डाळी, सोयाबीन, दूध, दही, मासे</p>
+        <p style="margin-top:0.5rem;"><strong>दररोज:</strong> शरीराच्या वजनाच्या प्रति किलो 1-1.5 ग्रॅम</p>
+      </div>
+      <div class="card animate-in" style="border-left:4px solid #ffa502;">
+        <h3>🍚 कर्बोदके (Carbs)</h3>
+        <p style="margin:0.8rem 0;color:var(--text-muted);">शरीराला ऊर्जा देणे</p>
+        <p><strong>स्रोत:</strong> भात, चपाती, ओट्स, रताळे, केळी, ब्रेड, बटाटा</p>
+        <p style="margin-top:0.5rem;"><strong>दररोज:</strong> एकूण कॅलरीच्या 45-65%</p>
+      </div>
+      <div class="card animate-in" style="border-left:4px solid #2ecc71;">
+        <h3>🥑 चरबी (Fats)</h3>
+        <p style="margin:0.8rem 0;color:var(--text-muted);">हार्मोन्स, मेंदू, त्वचेसाठी</p>
+        <p><strong>स्रोत:</strong> तूप, बदाम, अक्रोड, शेंगदाणे, खोबरेल तेल, ऑलिव्ह ऑइल</p>
+        <p style="margin-top:0.5rem;"><strong>दररोज:</strong> एकूण कॅलरीच्या 20-35%</p>
+      </div>
+    </div>
+
+    <!-- Veg / Non-veg Tabs -->
+    <h2 class="section-title animate-in" style="font-size:1.5rem;margin-top:2rem;">🍽️ आरोग्यदायी पदार्थ</h2>
+    <div class="tabs animate-in">
+      <button class="tab-btn active" onclick="openTab('veg',this)">🥬 शाकाहारी</button>
+      <button class="tab-btn" onclick="openTab('nonveg',this)">🍗 मांसाहारी</button>
+    </div>
+
+    <div id="veg" class="tab-content active">
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥬</span><h4>पालक</h4><p>लोह, कॅल्शियम भरपूर. हाडे मजबूत करते.</p></div>
+        <div class="card food-card"><span class="food-icon">🥕</span><h4>गाजर</h4><p>व्हिटॅमिन A भरपूर. डोळ्यांसाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍅</span><h4>टोमॅटो</h4><p>अँटीऑक्सिडंट्स, व्हिटॅमिन C. त्वचेसाठी चांगले.</p></div>
+        <div class="card food-card"><span class="food-icon">🥒</span><h4>काकडी</h4><p>पाण्याचे प्रमाण जास्त. हायड्रेशनसाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍌</span><h4>केळे</h4><p>पोटॅशियम, ऊर्जा. व्यायामापूर्वी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍎</span><h4>सफरचंद</h4><p>फायबर भरपूर. पचनसंस्थेसाठी चांगले.</p></div>
+        <div class="card food-card"><span class="food-icon">🥜</span><h4>शेंगदाणे</h4><p>प्रथिने, चांगली चरबी. स्नायूंसाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>मूग डाळ</h4><p>हलकी, पचायला सोपी, प्रथिनेयुक्त.</p></div>
+        <div class="card food-card"><span class="food-icon">🥛</span><h4>दही</h4><p>प्रोबायोटिक्स. पचनासाठी अत्यंत चांगले.</p></div>
+        <div class="card food-card"><span class="food-icon">🧈</span><h4>तूप</h4><p>ऊर्जा, जीवनसत्त्वे. मेंदूसाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍠</span><h4>रताळे</h4><p>फायबर, व्हिटॅमिन A. हळूहळू ऊर्जा देते.</p></div>
+        <div class="card food-card"><span class="food-icon">🥦</span><h4>ब्रोकोली</h4><p>कॅल्शियम, व्हिटॅमिन C, K. कॅन्सरविरोधी.</p></div>
+      </div>
+    </div>
+
+    <div id="nonveg" class="tab-content">
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥚</span><h4>अंडी</h4><p>संपूर्ण प्रथिने. स्नायू बांधणीसाठी सर्वोत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍗</span><h4>चिकन ब्रेस्ट</h4><p>उच्च प्रथिने, कमी चरबी. फिटनेससाठी आदर्श.</p></div>
+        <div class="card food-card"><span class="food-icon">🐟</span><h4>मासे (रोहू/बांगडा)</h4><p>ओमेगा-3. हृदय व मेंदूसाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🍖</span><h4>मटण</h4><p>लोह, जस्त भरपूर. रक्तवाढीसाठी चांगले.</p></div>
+        <div class="card food-card"><span class="food-icon">🦐</span><h4>कोळंबी</h4><p>कमी कॅलरी, उच्च प्रथिने. हलके मांसाहारी.</p></div>
+        <div class="card food-card"><span class="food-icon">🍳</span><h4>ऑम्लेट</h4><p>जलद, सोपा प्रथिनेयुक्त नाश्ता.</p></div>
+      </div>
+    </div>
+
+    <!-- Water Tracker -->
+    <h2 class="section-title animate-in" style="font-size:1.5rem;margin-top:3rem;">💧 पाणी पिण्याचा ट्रॅकर</h2>
+    <p class="section-subtitle animate-in">दररोज ८ ग्लास पाणी प्या</p>
+    <div class="card animate-in" style="padding:2rem;" id="water-tracker"></div>
+  </section>
+
+  <footer class="footer"><p>🌿 माझा हेल्थ गायडर © 2026</p></footer>
+  <script src="js/app.js"></script><script src="js/gamification.js"></script><script src="js/trackers.js"></script>
+  <script>initWaterTracker();</script>
+</body>
+</html>

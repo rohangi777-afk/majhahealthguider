@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>व्यायाम | माझा हेल्थ गायडर</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">🌿 माझा हेल्थ गायडर</a>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 मुख्यपृष्ठ</a></li><li><a href="diet.html">🥗 जेवण-खाणं</a></li>
+      <li><a href="mental.html">🧠 मानसिक आरोग्य</a></li><li><a href="bmi.html">⚖️ BMI</a></li>
+      <li><a href="diet-planner.html">📋 डाएट प्लॅन</a></li>
+      <li><a href="yoga.html">🧘 योगा</a></li><li><a href="workout.html" class="active">💪 व्यायाम</a></li>
+    </ul>
+    <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()">🌙</button><button class="hamburger">☰</button></div>
+  </nav>
+
+  <section class="section" style="padding-top:5rem;">
+    <h1 class="section-title animate-in">💪 व्यायाम (Workout)</h1>
+    <p class="section-subtitle animate-in">शरीर मजबूत बनवा — दररोज व्यायाम करा!</p>
+
+    <!-- Workout Timer -->
+    <div class="card animate-in" style="text-align:center;padding:1.5rem;margin-bottom:2rem;">
+      <h3>⏱️ व्यायाम टायमर</h3>
+      <div id="timer-display" style="font-size:3rem;font-weight:900;color:var(--primary);margin:1rem 0;">00:00</div>
+      <button class="btn btn-primary" onclick="startTimer()" id="timer-btn">▶ सुरू करा</button>
+      <button class="btn btn-outline" onclick="resetTimer()">🔄 रीसेट</button>
+    </div>
+
+    <div class="exercise-grid">
+      <!-- 1. Standard Dand -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🏋️</span>
+        <h4>1. दंड (Standard Push-up)</h4>
+        <span class="badge badge-beginner" style="margin-bottom:0.8rem;">🌱 सोपे</span>
+        <p><strong>पद्धत:</strong> पोटावर झोपा. हात खांद्याच्या रुंदीवर ठेवा. शरीर सरळ ठेवत वर-खाली करा. छाती जमिनीजवळ आणा.</p>
+        <p><strong>फायदे:</strong> छाती, खांदे, त्रायसेप्स मजबूत. संपूर्ण वरच्या शरीराचा व्यायाम.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 10-15 रेप्स | विश्रांती: 60 सेकंद</p>
+      </div>
+
+      <!-- 2. Hanuman Dand -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🙏</span>
+        <h4>2. हनुमान दंड</h4>
+        <span class="badge badge-active" style="margin-bottom:0.8rem;">⚡ मध्यम</span>
+        <p><strong>पद्धत:</strong> पुश-अप स्थितीत या. शरीर पुढे ढकला, छाती जमिनीजवळ आणा, मग वर उचला (डाइव्ह बॉम्बर सारखे). उलटे करत मागे या.</p>
+        <p><strong>फायदे:</strong> खांदे, छाती, पाठ, हात सर्व मजबूत. पारंपारिक भारतीय व्यायाम.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 8-12 रेप्स | विश्रांती: 90 सेकंद</p>
+      </div>
+
+      <!-- 3. Vrischikasana Dand -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🦂</span>
+        <h4>3. वृश्चिकासन दंड</h4>
+        <span class="badge badge-pro" style="margin-bottom:0.8rem;">🏆 कठीण</span>
+        <p><strong>पद्धत:</strong> भिंतीजवळ हँडस्टँड करा. हात वाकवत डोके जमिनीजवळ आणा आणि परत वर ढकला. अत्यंत प्रगत व्यायाम.</p>
+        <p><strong>फायदे:</strong> खांदे अत्यंत मजबूत, संतुलन, शरीराचे संपूर्ण नियंत्रण.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 3-5 रेप्स | विश्रांती: 120 सेकंद</p>
+      </div>
+
+      <!-- 4. Baithak -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🦶</span>
+        <h4>4. बैठक (Squats)</h4>
+        <span class="badge badge-beginner" style="margin-bottom:0.8rem;">🌱 सोपे</span>
+        <p><strong>पद्धत:</strong> पाय खांद्याच्या रुंदीवर ठेवा. हात पुढे सरळ. कंबर मागे ढकलत खाली बसा. गुडघे बोटांच्या पुढे जाऊ नयेत.</p>
+        <p><strong>फायदे:</strong> मांड्या, कंबर, नितंब मजबूत. पायांचा सर्वोत्तम व्यायाम.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 15-20 रेप्स | विश्रांती: 60 सेकंद</p>
+      </div>
+
+      <!-- 5. Sapate -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🏃</span>
+        <h4>5. सपाटे (High Knees)</h4>
+        <span class="badge badge-beginner" style="margin-bottom:0.8rem;">🌱 सोपे</span>
+        <p><strong>पद्धत:</strong> जागीच धावा. गुडघे छातीपर्यंत उचला. हात सोबत हलवा. वेगाने करा. कार्डिओ व्यायाम.</p>
+        <p><strong>फायदे:</strong> हृदय मजबूत, कॅलरी बर्न, सहनशक्ती वाढते.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 30 सेकंद | विश्रांती: 30 सेकंद</p>
+      </div>
+
+      <!-- 6. Plank -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🧱</span>
+        <h4>6. प्लँक (Plank)</h4>
+        <span class="badge badge-active" style="margin-bottom:0.8rem;">⚡ मध्यम</span>
+        <p><strong>पद्धत:</strong> पुश-अप स्थितीत या पण कोपरांवर राहा. शरीर एका सरळ रेषेत ठेवा. पोट आत ओढा. कंबर खाली जाऊ देऊ नका.</p>
+        <p><strong>फायदे:</strong> कोर मजबूत, पोटाचे स्नायू, पाठदुखी कमी, शरीराची मुद्रा सुधारते.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 30-60 सेकंद | विश्रांती: 45 सेकंद</p>
+      </div>
+
+      <!-- 7. Lunges -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🏋️</span>
+        <h4>7. लंजेस (Lunges)</h4>
+        <span class="badge badge-beginner" style="margin-bottom:0.8rem;">🌱 सोपे</span>
+        <p><strong>पद्धत:</strong> एक पाय पुढे टाका. दोन्ही गुडघे 90° वाकवा. मागचा गुडघा जमिनीजवळ. परत वर या. पाय बदला.</p>
+        <p><strong>फायदे:</strong> पायांचे स्नायू, नितंब, संतुलन सुधारते.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 12 रेप्स (प्रत्येक पाय) | विश्रांती: 60 सेकंद</p>
+      </div>
+
+      <!-- 8. Push-ups Variations -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">💎</span>
+        <h4>8. डायमंड पुश-अप</h4>
+        <span class="badge badge-active" style="margin-bottom:0.8rem;">⚡ मध्यम</span>
+        <p><strong>पद्धत:</strong> हात एकमेकांजवळ ठेवा (हिऱ्याचा आकार बनवा). पुश-अप करा. हात जवळ असल्याने त्रायसेप्सवर जास्त ताण.</p>
+        <p><strong>फायदे:</strong> त्रायसेप्स, छातीचा मधला भाग मजबूत.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 8-12 रेप्स | विश्रांती: 60 सेकंद</p>
+      </div>
+
+      <!-- 9. Jumping Jacks -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">⭐</span>
+        <h4>9. जंपिंग जॅक्स</h4>
+        <span class="badge badge-beginner" style="margin-bottom:0.8rem;">🌱 सोपे</span>
+        <p><strong>पद्धत:</strong> सरळ उभे राहा. उडी मारत पाय बाहेर आणि हात वर करा. परत मूळ स्थितीत या. वेगाने करा.</p>
+        <p><strong>फायदे:</strong> संपूर्ण शरीराचा कार्डिओ, कॅलरी बर्न, ऊर्जा वाढते.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 30 रेप्स | विश्रांती: 30 सेकंद</p>
+      </div>
+
+      <!-- 10. Burpees -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🔥</span>
+        <h4>10. बर्पीज (Burpees)</h4>
+        <span class="badge badge-pro" style="margin-bottom:0.8rem;">🏆 कठीण</span>
+        <p><strong>पद्धत:</strong> उभे राहा → खाली बसा → पाय मागे फेका (प्लँक) → पुश-अप → पाय पुढे → उडी मारा. हे एक रेप.</p>
+        <p><strong>फायदे:</strong> सर्वोत्तम फुल-बॉडी व्यायाम, जास्तीत जास्त कॅलरी बर्न, सहनशक्ती.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 8-10 रेप्स | विश्रांती: 90 सेकंद</p>
+      </div>
+
+      <!-- 11. Mountain Climbers -->
+      <div class="card exercise-card animate-in">
+        <span class="ex-icon">🏔️</span>
+        <h4>11. माउंटन क्लायंबर्स</h4>
+        <span class="badge badge-active" style="margin-bottom:0.8rem;">⚡ मध्यम</span>
+        <p><strong>पद्धत:</strong> प्लँक स्थितीत या. एक गुडघा छातीकडे आणा, मग बदला. वेगाने करा जसे डोंगर चढत आहात.</p>
+        <p><strong>फायदे:</strong> कोर, पाय, हात सर्व मजबूत. कार्डिओ + स्ट्रेंथ एकत्र.</p>
+        <p style="color:var(--primary);font-weight:600;margin-top:0.5rem;">📌 3 सेट × 30 सेकंद | विश्रांती: 45 सेकंद</p>
+      </div>
+    </div>
+
+    <!-- Workout Tips -->
+    <div class="card animate-in" style="padding:2rem;margin-top:2rem;">
+      <h3 style="color:var(--primary);margin-bottom:1rem;">💡 व्यायामाच्या टिप्स</h3>
+      <ul style="list-style:none;line-height:2.2;">
+        <li>🔥 व्यायामापूर्वी 5-10 मिनिटे वॉर्म अप करा</li>
+        <li>💧 व्यायामादरम्यान आणि नंतर भरपूर पाणी प्या</li>
+        <li>🍌 व्यायामापूर्वी 30 मिनिटे केळी/ओट्स खा</li>
+        <li>🥚 व्यायामानंतर 30 मिनिटांत प्रथिनेयुक्त आहार घ्या</li>
+        <li>😴 पुरेशी विश्रांती घ्या - स्नायूंना बरे होण्यासाठी वेळ द्या</li>
+        <li>📈 हळूहळू वजन/रेप्स वाढवा, एकदम जास्त करू नका</li>
+        <li>⚠️ दुखापत झाल्यास ताबडतोब थांबा आणि डॉक्टरांना भेटा</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer"><p>🌿 माझा हेल्थ गायडर © 2026</p></footer>
+  <script src="js/app.js"></script><script src="js/gamification.js"></script>
+  <script>
+    // Workout Timer
+    let timerInterval, timerSeconds = 0, timerRunning = false;
+    function startTimer() {
+      if (timerRunning) { clearInterval(timerInterval); document.getElementById('timer-btn').textContent = '▶ सुरू करा'; timerRunning = false; return; }
+      timerRunning = true;
+      document.getElementById('timer-btn').textContent = '⏸ थांबा';
+      timerInterval = setInterval(() => {
+        timerSeconds++;
+        const m = String(Math.floor(timerSeconds / 60)).padStart(2, '0');
+        const s = String(timerSeconds % 60).padStart(2, '0');
+        document.getElementById('timer-display').textContent = `${m}:${s}`;
+      }, 1000);
+    }
+    function resetTimer() {
+      clearInterval(timerInterval); timerSeconds = 0; timerRunning = false;
+      document.getElementById('timer-display').textContent = '00:00';
+      document.getElementById('timer-btn').textContent = '▶ सुरू करा';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>डाएट प्लॅनर | माझा हेल्थ गायडर</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">🌿 माझा हेल्थ गायडर</a>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 मुख्यपृष्ठ</a></li><li><a href="diet.html">🥗 जेवण-खाणं</a></li>
+      <li><a href="mental.html">🧠 मानसिक आरोग्य</a></li><li><a href="bmi.html">⚖️ BMI</a></li>
+      <li><a href="diet-planner.html" class="active">📋 डाएट प्लॅन</a></li>
+      <li><a href="yoga.html">🧘 योगा</a></li><li><a href="workout.html">💪 व्यायाम</a></li>
+    </ul>
+    <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()">🌙</button><button class="hamburger">☰</button></div>
+  </nav>
+
+  <section class="section" style="padding-top:5rem;">
+    <h1 class="section-title animate-in">📋 डाएट प्लॅनर</h1>
+    <p class="section-subtitle animate-in">तुमच्या ध्येयानुसार आहार योजना निवडा</p>
+
+    <div class="tabs animate-in">
+      <button class="tab-btn active" onclick="openTab('gain',this)">💪 वजन वाढवा</button>
+      <button class="tab-btn" onclick="openTab('loss',this)">🏃 वजन कमी करा</button>
+    </div>
+
+    <!-- WEIGHT GAIN -->
+    <div id="gain" class="tab-content active">
+      <div class="card animate-in" style="padding:1.5rem;margin-bottom:1.5rem;">
+        <h3 style="color:var(--primary);">💪 वजन वाढवण्यासाठी आहार योजना</h3>
+        <p style="color:var(--text-muted);margin-top:0.5rem;">दररोज 2500-3000 कॅलरी खाणे आवश्यक. जास्त प्रथिने आणि कर्बोदके खा.</p>
+      </div>
+
+      <h3 class="animate-in" style="margin:1.5rem 0 1rem;font-weight:700;">🌅 सकाळचा नाश्ता (Breakfast)</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥛</span><h4>दूध + केळी शेक</h4><p>1 ग्लास दूध, 2 केळी, 1 चमचा मध. ~350 कॅलरी. प्रथिने व ऊर्जा भरपूर.</p></div>
+        <div class="card food-card"><span class="food-icon">🥜</span><h4>ड्रायफ्रूट लाडू</h4><p>बदाम, काजू, खजूर, तूप. ~200 कॅलरी प्रत्येक. नैसर्गिक ऊर्जा.</p></div>
+        <div class="card food-card"><span class="food-icon">🍳</span><h4>3 अंडी ऑम्लेट</h4><p>भाज्या घालून. ~300 कॅलरी. 21g प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍞</span><h4>4 पराठे + तूप</h4><p>आलू/गोबी पराठे. ~500 कॅलरी. उत्तम ऊर्जा.</p></div>
+        <div class="card food-card"><span class="food-icon">🥣</span><h4>ओट्स + दूध + ड्रायफ्रूट</h4><p>~400 कॅलरी. फायबर + प्रथिने. सकाळसाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🧈</span><h4>पोहे + शेंगदाणे</h4><p>तूपात बनवलेले. ~350 कॅलरी. हलके पण पौष्टिक.</p></div>
+        <div class="card food-card"><span class="food-icon">🥞</span><h4>बेसन चिला</h4><p>पनीर भरून. ~400 कॅलरी. उच्च प्रथिने.</p></div>
+      </div>
+
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">🍛 दुपारचे जेवण (Lunch)</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🍚</span><h4>2 वाटी भात + डाळ</h4><p>तूप घालून. ~500 कॅलरी. संपूर्ण प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍗</span><h4>चिकन करी + चपाती</h4><p>200g चिकन + 3 चपाती. ~650 कॅलरी. उच्च प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🥘</span><h4>पनीर भुर्जी + भात</h4><p>100g पनीर. ~550 कॅलरी. शाकाहारी प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>राजमा/छोले + भात</h4><p>~500 कॅलरी. प्रथिने + कर्बोदके.</p></div>
+        <div class="card food-card"><span class="food-icon">🐟</span><h4>मासे फ्राय + भात</h4><p>~550 कॅलरी. ओमेगा-3 भरपूर.</p></div>
+        <div class="card food-card"><span class="food-icon">🥗</span><h4>सोयाबीन भाजी + चपाती</h4><p>~450 कॅलरी. वनस्पती प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>अंडा करी + 3 चपाती</h4><p>4 अंडी. ~600 कॅलरी. स्वस्त प्रथिने.</p></div>
+      </div>
+
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">🍿 स्नॅक्स</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥜</span><h4>मूठभर बदाम-काजू</h4><p>~250 कॅलरी. चांगली चरबी, प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍌</span><h4>पीनट बटर + केळी</h4><p>~350 कॅलरी. ऊर्जा बूस्टर.</p></div>
+        <div class="card food-card"><span class="food-icon">🧀</span><h4>पनीर टिक्का</h4><p>~300 कॅलरी. प्रथिने + कॅल्शियम.</p></div>
+        <div class="card food-card"><span class="food-icon">🥛</span><h4>प्रोटीन शेक</h4><p>दूध + केळी + ओट्स + शेंगदाणे. ~400 कॅलरी.</p></div>
+        <div class="card food-card"><span class="food-icon">🍠</span><h4>उकडलेले रताळे</h4><p>~200 कॅलरी. निरोगी कर्बोदके.</p></div>
+        <div class="card food-card"><span class="food-icon">🍇</span><h4>फळांची सॅलड + दही</h4><p>~250 कॅलरी. जीवनसत्त्वे भरपूर.</p></div>
+      </div>
+
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">🌙 रात्रीचे जेवण (Dinner)</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🍞</span><h4>3 चपाती + भाजी + डाळ</h4><p>~500 कॅलरी. संतुलित जेवण.</p></div>
+        <div class="card food-card"><span class="food-icon">🍗</span><h4>ग्रिल्ड चिकन + सॅलड</h4><p>~450 कॅलरी. उच्च प्रथिने, कमी चरबी.</p></div>
+        <div class="card food-card"><span class="food-icon">🥘</span><h4>पनीर टिक्का मसाला + रोटी</h4><p>~550 कॅलरी. स्वादिष्ट शाकाहारी.</p></div>
+        <div class="card food-card"><span class="food-icon">🥚</span><h4>एग भुर्जी + 2 चपाती</h4><p>~400 कॅलरी. जलद, पौष्टिक.</p></div>
+        <div class="card food-card"><span class="food-icon">🍚</span><h4>दही भात + लोणचे</h4><p>~350 कॅलरी. पचनासाठी उत्तम.</p></div>
+        <div class="card food-card"><span class="food-icon">🥛</span><h4>रात्री हळद दूध</h4><p>~150 कॅलरी. प्रतिकारशक्ती वाढते.</p></div>
+      </div>
+
+      <!-- Weekly Schedule -->
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">📅 साप्ताहिक वेळापत्रक</h3>
+      <div style="overflow-x:auto;">
+      <table class="diet-table animate-in">
+        <thead><tr><th>दिवस</th><th>नाश्ता</th><th>दुपार</th><th>स्नॅक</th><th>रात्री</th></tr></thead>
+        <tbody>
+          <tr><td><strong>सोमवार</strong></td><td>ओट्स + दूध</td><td>डाळ भात</td><td>बदाम</td><td>चपाती भाजी</td></tr>
+          <tr><td><strong>मंगळवार</strong></td><td>पराठे + दही</td><td>चिकन + भात</td><td>केळी शेक</td><td>पनीर + रोटी</td></tr>
+          <tr><td><strong>बुधवार</strong></td><td>अंडी + ब्रेड</td><td>राजमा भात</td><td>ड्रायफ्रूट</td><td>डाळ + चपाती</td></tr>
+          <tr><td><strong>गुरुवार</strong></td><td>पोहे + दूध</td><td>मासे + भात</td><td>पनीर</td><td>एग भुर्जी</td></tr>
+          <tr><td><strong>शुक्रवार</strong></td><td>बेसन चिला</td><td>छोले + भात</td><td>फळे + दही</td><td>चिकन + रोटी</td></tr>
+          <tr><td><strong>शनिवार</strong></td><td>उपमा + दूध</td><td>बिर्याणी</td><td>शेंगदाणे</td><td>खिचडी</td></tr>
+          <tr><td><strong>रविवार</strong></td><td>मिसळ पाव</td><td>मटण + भात</td><td>प्रोटीन शेक</td><td>दही भात</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- WEIGHT LOSS -->
+    <div id="loss" class="tab-content">
+      <div class="card animate-in" style="padding:1.5rem;margin-bottom:1.5rem;">
+        <h3 style="color:var(--primary);">🏃 वजन कमी करण्यासाठी आहार योजना</h3>
+        <p style="color:var(--text-muted);margin-top:0.5rem;">दररोज 1500-1800 कॅलरी. जास्त प्रथिने, कमी कर्बोदके, भरपूर भाज्या.</p>
+      </div>
+
+      <h3 class="animate-in" style="margin:1.5rem 0 1rem;font-weight:700;">🌅 सकाळचा नाश्ता</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🍋</span><h4>कोमट लिंबू पाणी</h4><p>सकाळी रिकाम्या पोटी. ~10 कॅलरी. चयापचय वाढवते.</p></div>
+        <div class="card food-card"><span class="food-icon">🥣</span><h4>ओट्स + फळे</h4><p>दुधाशिवाय किंवा स्किम्ड दूध. ~250 कॅलरी.</p></div>
+        <div class="card food-card"><span class="food-icon">🥚</span><h4>उकडलेली 2 अंडी</h4><p>फक्त पांढरा भाग किंवा संपूर्ण. ~140 कॅलरी. शुद्ध प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍇</span><h4>फ्रूट बाउल</h4><p>सफरचंद, पेरू, पपई. ~150 कॅलरी. फायबर भरपूर.</p></div>
+        <div class="card food-card"><span class="food-icon">🥒</span><h4>मूग स्प्राउट्स सॅलड</h4><p>काकडी, टोमॅटो, लिंबू. ~180 कॅलरी. हलके पण पोट भरणारे.</p></div>
+        <div class="card food-card"><span class="food-icon">🍵</span><h4>ग्रीन टी + बिस्किटे (2)</h4><p>~80 कॅलरी. अँटीऑक्सिडंट्स. चयापचय वाढवते.</p></div>
+        <div class="card food-card"><span class="food-icon">🥞</span><h4>मूग डाळ चिला</h4><p>कमी तेलात. ~200 कॅलरी. प्रथिने + फायबर.</p></div>
+      </div>
+
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">🍛 दुपारचे जेवण</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥗</span><h4>मोठी सॅलड + ग्रिल्ड चिकन</h4><p>~350 कॅलरी. कमी कर्बोदके, उच्च प्रथिने.</p></div>
+        <div class="card food-card"><span class="food-icon">🍚</span><h4>1 वाटी ब्राउन राइस + डाळ</h4><p>~350 कॅलरी. फायबर भरपूर भात.</p></div>
+        <div class="card food-card"><span class="food-icon">🥬</span><h4>भाज्यांचे सूप + 1 चपाती</h4><p>~250 कॅलरी. कमी कॅलरी, पोट भरते.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>मूग डाळ खिचडी</h4><p>~300 कॅलरी. हलकी, पचायला सोपी.</p></div>
+        <div class="card food-card"><span class="food-icon">🐟</span><h4>ग्रिल्ड मासे + सॅलड</h4><p>~300 कॅलरी. ओमेगा-3, कमी चरबी.</p></div>
+        <div class="card food-card"><span class="food-icon">🥦</span><h4>स्टिर फ्राय भाज्या + 1 रोटी</h4><p>~280 कॅलरी. कमी तेलात बनवा.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>टोमॅटो रसम + भात (कमी)</h4><p>~250 कॅलरी. दक्षिण भारतीय हलके जेवण.</p></div>
+      </div>
+
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">🍿 स्नॅक्स</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥒</span><h4>काकडी + गाजर स्टिक्स</h4><p>~50 कॅलरी. कुरकुरीत, कमी कॅलरी.</p></div>
+        <div class="card food-card"><span class="food-icon">🍵</span><h4>ग्रीन टी</h4><p>~5 कॅलरी. चरबी जाळण्यास मदत.</p></div>
+        <div class="card food-card"><span class="food-icon">🍎</span><h4>1 सफरचंद</h4><p>~95 कॅलरी. फायबर भरपूर, भूक शमवते.</p></div>
+        <div class="card food-card"><span class="food-icon">🥜</span><h4>5-6 बदाम</h4><p>~80 कॅलरी. चांगली चरबी (मर्यादित).</p></div>
+        <div class="card food-card"><span class="food-icon">🥛</span><h4>ताक / छास</h4><p>~40 कॅलरी. पचनासाठी उत्तम. थंडावा.</p></div>
+        <div class="card food-card"><span class="food-icon">🍇</span><h4>मखाने (भाजलेले)</h4><p>~100 कॅलरी. कमी चरबी, कुरकुरीत.</p></div>
+      </div>
+
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">🌙 रात्रीचे जेवण</h3>
+      <div class="food-grid">
+        <div class="card food-card"><span class="food-icon">🥗</span><h4>सूप + सॅलड</h4><p>~200 कॅलरी. हलके, पचायला सोपे.</p></div>
+        <div class="card food-card"><span class="food-icon">🍞</span><h4>1 चपाती + भाजी</h4><p>~250 कॅलरी. कमी तेलातील भाजी.</p></div>
+        <div class="card food-card"><span class="food-icon">🥚</span><h4>अंड्याचे भुर्जी (2 अंडी)</h4><p>~200 कॅलरी. कमी तेल वापरा.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>दलिया (गव्हाची लापशी)</h4><p>~220 कॅलरी. फायबर भरपूर.</p></div>
+        <div class="card food-card"><span class="food-icon">🥛</span><h4>हळद दूध (स्किम्ड)</h4><p>~80 कॅलरी. झोपण्यापूर्वी प्या.</p></div>
+        <div class="card food-card"><span class="food-icon">🍲</span><h4>मूग सूप</h4><p>~150 कॅलरी. प्रथिनेयुक्त, पचायला हलके.</p></div>
+      </div>
+
+      <!-- Weekly Schedule -->
+      <h3 class="animate-in" style="margin:2rem 0 1rem;font-weight:700;">📅 साप्ताहिक वेळापत्रक</h3>
+      <div style="overflow-x:auto;">
+      <table class="diet-table animate-in">
+        <thead><tr><th>दिवस</th><th>नाश्ता</th><th>दुपार</th><th>स्नॅक</th><th>रात्री</th></tr></thead>
+        <tbody>
+          <tr><td><strong>सोमवार</strong></td><td>ओट्स + फळे</td><td>डाळ + भात (कमी)</td><td>ग्रीन टी</td><td>सूप + सॅलड</td></tr>
+          <tr><td><strong>मंगळवार</strong></td><td>उकडलेली अंडी</td><td>ग्रिल्ड चिकन</td><td>सफरचंद</td><td>चपाती भाजी</td></tr>
+          <tr><td><strong>बुधवार</strong></td><td>मूग चिला</td><td>खिचडी</td><td>बदाम</td><td>दलिया</td></tr>
+          <tr><td><strong>गुरुवार</strong></td><td>फ्रूट बाउल</td><td>ग्रिल्ड मासे</td><td>ताक</td><td>मूग सूप</td></tr>
+          <tr><td><strong>शुक्रवार</strong></td><td>स्प्राउट्स</td><td>भाज्या सूप + रोटी</td><td>काकडी</td><td>अंडा भुर्जी</td></tr>
+          <tr><td><strong>शनिवार</strong></td><td>ओट्स</td><td>ब्राउन राइस डाळ</td><td>मखाने</td><td>सॅलड</td></tr>
+          <tr><td><strong>रविवार</strong></td><td>लिंबू पाणी + उपमा</td><td>रसम भात</td><td>फळे</td><td>हळद दूध</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- Tips -->
+    <div class="card animate-in" style="padding:2rem;margin-top:2rem;">
+      <h3 style="color:var(--primary);margin-bottom:1rem;">💡 महत्त्वाच्या टिप्स</h3>
+      <ul style="list-style:none;line-height:2.2;">
+        <li>✅ दररोज किमान 8-10 ग्लास पाणी प्या</li>
+        <li>✅ जेवणाच्या 30 मिनिटे आधी पाणी प्या</li>
+        <li>✅ रात्रीचे जेवण 8 वाजेपूर्वी करा</li>
+        <li>✅ जंक फूड, कोल्ड्रिंक्स पूर्णपणे टाळा</li>
+        <li>✅ हळूहळू चावून खा, घाई करू नका</li>
+        <li>⚠️ एकदम कमी खाणे सुरू करू नका, हळूहळू कमी करा</li>
+        <li>⚠️ कोणताही आहार बदल करण्यापूर्वी डॉक्टरांचा सल्ला घ्या</li>
+        <li>⚠️ व्यायामासोबत आहार बदलणे अधिक प्रभावी आहे</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer"><p>🌿 माझा हेल्थ गायडर © 2026</p></footer>
+  <script src="js/app.js"></script><script src="js/gamification.js"></script>
+</body>
+</html>
